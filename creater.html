@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活动生成器</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-md-6">
+        <h1>活动生成器    <small>creater</small></h1>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-justified">
+          <li class="active"><a href="index.html">主页</a></li>
+          <li><a href="creater.html">发起新活动</a></li>
+          <li><a href="#">还没实现</a></li>
+          <li><a href="#">还没实现</a></li>
+          <li><a href="#">俱乐部信息</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <hr>
+      <div class="text-left" id="startDiv">
+        <div class=" super-big-font ">
+          我要发起
+          <a href="###" id="startBtn">这样一个</a>
+          <span id="startText"class="hide">这样一个</span>
+          活动
+        </div>
+      </div>
+    </div>
+    <div class="container hide" id="createBasicDiv">
+      <hr>
+      <div class="col-md-8 bigger">
+        <div class="page-header">
+          <h1>
+            这个活动的基本信息    <small>第一步</small>
+            <small><a href="###" class="">退一步</a></small>
+          </h1>
+        </div>
+        <form role="form" id="basicInfoForm">
+          <div class="form-group">
+            <label for="eventName">它叫</label>
+            <input type="text" class="form-control input-lg basicStepControl" id="eventName" name="name" placeholder="活动的名称">
+          </div>
+          <div class="form-group">
+            <label for="eventInfo">简单介绍下这个活动</label>
+            <input type="text" class="form-control input-lg basicStepControl" id="eventInfo" name="info" placeholder="活动的简要介绍">
+          </div>
+        </form>
+        <button type="submit" class="btn btn-primary btn-lg basicStepControl pull-right" id="startChooseTypeBtn">下一步</button>
+      </div>
+    </div>
+    <div id="create_cover" style="height: 600px;"></div>
+    <div class="container footer">
+      <p>&copy; COSE AST 2013</p>
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/creater.js"></script>
+
+  </body>
+</html>
